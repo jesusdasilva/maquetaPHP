@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+
+  <title>Agendade Contactos</title>
+
+  <!-- Estilos personalizados -->
+  <style media="screen">
+    /*html{
+      font-size: 16px;
+    }*/
+    body{
+      padding-top : 100px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Barra de navegación  -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+    <!-- Nombre aplicación -->
+    <a class="navbar-brand" href="#">
+      <img src="address-book.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+      Agenda de Contactos
+    </a><!-- /. Nombre Aplicación -->
+    <!-- Colapso de barra -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <!--Inicio -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-home mr-2"></i>Inicio</a>
+        </li>
+      </ul><!-- /.Inicio-->
+      <!--buscar -->
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"><i class="fas fa-search mr-2"></i>Buscar</a>
+        </li>
+      </ul><!-- /.Buscar-->
+    </div><!-- /. Colapso de barra -->
+    <!-- Iniciar Sessión -->
+    <ul class="nav navbar-nav navbar-right">
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-sign-in-alt mr-2"></i>Inicar Sesión</a>
+      </li>
+    </ul><!-- /. Iniciar Sesión -->
+  </nav><!--  /. Barra de navegación -->
+
+  <!-- Contenido -->
+  <div class="container">
+    <div class="row">
+
+      <!-- Barra Informativa -->
+      <div class="col-sm-12">
+        <img src="go-jump.svg" width="30" height="30" class="float-left mr-2" alt="">
+        <p class="h4">Resultados: 12</p>
+        <hr>
+      </div><!-- /.Barra Informativa -->
+
+          <div class="col-sm-3">
+            <div class="card text-center">
+              <img class="card-img-top rounded-circle mx-auto d-block mt-3" src="usuarios/usuario12.jpg" alt="Card image" style="width: 100px; height: 100px">
+              <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Grupo: PDVSA</p>
+              </div>
+              <div class="card-footer">
+                <a href="#">Ver detalles</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card text-center">
+              <img class="card-img-top rounded-circle mx-auto d-block mt-3" src="usuarios/usuario10.jpg" alt="Card image" style="width: 100px; height: 100px">
+              <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Grupo: PDVSA</p>
+              </div>
+              <div class="card-footer">
+                <a href="#">Ver detalles</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card text-center">
+              <img class="card-img-top rounded-circle mx-auto d-block mt-3" src="usuarios/usuario04.jpg" alt="Card image" style="width: 100px; height: 100px">
+              <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Grupo: PDVSA</p>
+              </div>
+              <div class="card-footer">
+                <a href="#">Ver detalles</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card text-center">
+              <img class="card-img-top  rounded-circle mx-auto d-block mt-3" src="usuarios/usuario07.jpg" alt="Card image" style="width: 100px; height: 100px">
+              <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Grupo: PDVSA</p>
+              </div>
+              <div class="card-footer">
+                <a href="#">Ver detalles</a>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Imágen -->
+          <div class="col-sm-3" style="margin-bottom:1rem;">
+            <img src="usuarios/usuario01.jpg" alt="" style="width: 100px; height: 100px" class="rounded-circle">
+            <div class="table-responsive-sm">
+              <table class="table table-borderless">
+                <tr class="d-flex">
+                  <td class="col-3">Nombre:</td>
+                  <td class="col-9">Jesús Dasilva</td>
+                </tr>
+                <tr class="d-flex">
+                  <td class="col-3">Grupo:</td>
+                  <td class="col-9">PDVSA</td>
+                </tr>
+              </table>
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm">Mostrar detalles</button>
+          </div><!-- /.imágen -->
+
+          <!-- Imágen -->
+          <div class="col-sm-3" style="margin-bottom:1rem;">
+            <img src="usuarios/usuario01.jpg" alt="" style="width: 100px; height: 100px" class="rounded-circle">
+            <div class="table-responsive-sm">
+              <table class="table table-bordered table-condensed">
+                <tr class="d-flex">
+                  <td class="col-4">Nombre:</td>
+                  <td class="col-8">Jesús Dasilva</td>
+                </tr>
+                <tr class="d-flex">
+                  <td class="col-4">Grupo:</td>
+                  <td class="col-8">PDVSA</td>
+                </tr>
+              </table>
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm">Mostrar detalles</button>
+          </div><!-- /.imágen -->
+
+          <!-- Imágen -->
+          <div class="col-sm-3" style="margin-bottom:1rem;">
+            <img src="usuarios/usuario01.jpg" alt="" style="width: 100px; height: 100px" class="rounded-circle">
+            <div class="table-responsive-sm">
+              <table class="table table-borderless">
+                <tr class="d-flex">
+                  <td class="col-2">Nombre:</td>
+                  <td class="col-10">Jesús Dasilva</td>
+                </tr>
+                <tr class="d-flex">
+                  <td class="col-2">Grupo:</td>
+                  <td class="col-10">PDVSA</td>
+                </tr>
+              </table>
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm">Mostrar detalles</button>
+          </div><!-- /.imágen -->
+
+          <!-- Imágen -->
+          <div class="col-sm-3" style="margin-bottom:1rem;">
+            <img src="usuarios/usuario01.jpg" alt="" style="width: 100px; height: 100px" class="rounded-circle">
+            <div class="table-responsive-sm">
+              <table class="table table-borderless">
+                <tr class="d-flex">
+                  <td class="col-2">Nombre:</td>
+                  <td class="col-10">Jesús Dasilva</td>
+                </tr>
+                <tr class="d-flex">
+                  <td class="col-2">Grupo:</td>
+                  <td class="col-10">PDVSA</td>
+                </tr>
+              </table>
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm">Mostrar detalles</button>
+          </div><!-- /.imágen -->
+
+          <!-- Imágen -->
+          <div class="col-sm-3" style="margin-bottom:1rem;">
+            <img src="usuarios/usuario02.jpg" alt="" style="width: 100px; height: 100px" class="rounded-circle">
+            <table>
+              <tr>
+                <td>Nombre:</td>
+                <td>Jesús Dasilva</td>
+              </tr>
+              <tr>
+                <td>Grupo:</td>
+                <td>PDVSA</td>
+              </tr>
+            </table>
+            <button type="submit" class="btn btn-primary btn-sm">Mostrar detalles</button>
+          </div><!-- /.imágen -->
+
+          <!-- Imágen -->
+          <div class="col-sm-3" style="margin-bottom:1rem;">
+            <img src="usuarios/usuario03.jpg" alt="" style="width: 100px; height: 100px" class="rounded-circle">
+            <table>
+              <tr>
+                <td>Nombre:</td>
+                <td>Jesús Dasilva</td>
+              </tr>
+              <tr>
+                <td>Grupo:</td>
+                <td>PDVSA</td>
+              </tr>
+            </table>
+            <button type="submit" class="btn btn-primary btn-sm">Mostrar detalles</button>
+          </div><!-- /.imágen -->
+
+          <!-- Imágen -->
+          <div class="col-sm-3" style="margin-bottom:1rem;">
+            <img src="usuarios/usuario04.jpg" alt="" style="width: 100px; height: 100px" class="rounded-circle">
+            <table>
+              <tr>
+                <td>Nombre:</td>
+                <td>Jesús Dasilva</td>
+              </tr>
+              <tr>
+                <td>Grupo:</td>
+                <td>PDVSA</td>
+              </tr>
+            </table>
+            <button type="submit" class="btn btn-primary btn-sm">Mostrar detalles</button>
+          </div><!-- /.imágen -->
+
+          <!-- Imágen -->
+          <div class="col-sm-3" style="margin-bottom:1rem;">
+            <img src="usuarios/usuario05.jpg" alt="" style="width: 100px; height: 100px" class="rounded-circle">
+            <table>
+              <tr>
+                <td>Nombre:</td>
+                <td>Jesús Dasilva</td>
+              </tr>
+              <tr>
+                <td>Grupo:</td>
+                <td>PDVSA</td>
+              </tr>
+            </table>
+            <button type="submit" class="btn btn-primary btn-sm">Mostrar detalles</button>
+          </div><!-- /.imágen -->
+
+          <!-- Imágen -->
+          <div class="col-sm-3" style="margin-bottom:1rem;">
+            <img src="usuarios/usuario06.jpg" alt="" style="width: 100px; height: 100px" class="rounded-circle">
+            <table>
+              <tr>
+                <td>Nombre:</td>
+                <td>Jesús Dasilva</td>
+              </tr>
+              <tr>
+                <td>Grupo:</td>
+                <td>PDVSA</td>
+              </tr>
+            </table>
+            <button type="submit" class="btn btn-primary btn-sm">Mostrar detalles</button>
+          </div><!-- /.imágen -->
+
+          <!-- Imágen -->
+          <div class="col-sm-3" style="margin-bottom:1rem;">
+            <img src="usuarios/usuario07.jpg" alt="" style="width: 100px; height: 100px" class="rounded-circle">
+            <table>
+              <tr>
+                <td>Nombre:</td>
+                <td>Jesús Dasilva</td>
+              </tr>
+              <tr>
+                <td>Grupo:</td>
+                <td>PDVSA</td>
+              </tr>
+            </table>
+            <button type="submit" class="btn btn-primary btn-sm">Mostrar detalles</button>
+          </div><!-- /.imágen -->
+
+          <div class="col-sm-3" style="margin-bottom:1rem;">
+            <img src="usuarios/usuario08.jpg" alt="" style="width: 100px; height: 100px" class="rounded-circle">
+            <table>
+              <tr>
+                <td>Nombre:</td>
+                <td>Jesús Dasilva</td>
+              </tr>
+              <tr>
+                <td>Grupo:</td>
+                <td>PDVSA</td>
+              </tr>
+            </table>
+            <button type="submit" class="btn btn-primary btn-sm">Mostrar detalles</button>
+          </div>
+
+          <div class="col-sm-3" style="margin-bottom:1rem;">
+            <img src="usuarios/usuario09.jpg" alt="" style="width: 100px; height: 100px" class="rounded-circle">
+            <table>
+              <tr>
+                <td>Nombre:</td>
+                <td>Jesús Dasilva</td>
+              </tr>
+              <tr>
+                <td>Grupo:</td>
+                <td>PDVSA</td>
+              </tr>
+            </table>
+            <button type="submit" class="btn btn-primary btn-sm">Mostrar detalles</button>
+          </div>
+
+          <div class="col-sm-3" style="margin-bottom:1rem;">
+            <img src="usuarios/usuario10.jpg" alt="" style="width: 100px; height: 100px" class="rounded-circle">
+            <table>
+              <tr>
+                <td>Nombre:</td>
+                <td>Jesús Dasilva</td>
+              </tr>
+              <tr>
+                <td>Grupo:</td>
+                <td>PDVSA</td>
+              </tr>
+            </table>
+            <button type="submit" class="btn btn-primary btn-sm">Mostrar detalles</button>
+          </div>
+
+          <div class="col-sm-3" style="margin-bottom:1rem;">
+            <img src="usuarios/usuario11.jpg" alt="" style="width: 100px; height: 100px" class="rounded-circle">
+            <table>
+              <tr>
+                <td>Nombre:</td>
+                <td>Jesús Dasilva</td>
+              </tr>
+              <tr>
+                <td>Grupo:</td>
+                <td>PDVSA</td>
+              </tr>
+            </table>
+            <button type="submit" class="btn btn-primary btn-sm">Mostrar detalles</button>
+          </div>
+
+          <div class="col-sm-3" style="margin-bottom:1rem;">
+            <img src="usuarios/usuario12.jpg" alt="" style="width: 100px; height: 100px" class="rounded-circle">
+            <table>
+              <tr>
+                <td>Nombre:</td>
+                <td>Jesús Dasilva</td>
+              </tr>
+              <tr>
+                <td>Grupo:</td>
+                <td>PDVSA</td>
+              </tr>
+            </table>
+            <button type="submit" class="btn btn-primary btn-sm">Mostrar detalles</button>
+          </div>
+
+          <div class="col-sm-3" style="margin-bottom:1rem;">
+            <img src="usuarios/usuario01.jpg" alt="" style="width: 100px; height: 100px" class="rounded-circle">
+            <table>
+              <tr>
+                <td>Nombre:</td>
+                <td>Jesús Dasilva</td>
+              </tr>
+              <tr>
+                <td>Grupo:</td>
+                <td>PDVSA</td>
+              </tr>
+            </table>
+            <button type="submit" class="btn btn-primary btn-sm">Mostrar detalles</button>
+          </div>
+
+          <div class="col-sm-3" style="margin-bottom:1rem;">
+            <img src="usuarios/usuario02.jpg" alt="" style="width: 100px; height: 100px" class="rounded-circle">
+            <table>
+              <tr>
+                <td>Nombre:</td>
+                <td>Jesús Dasilva</td>
+              </tr>
+              <tr>
+                <td>Grupo:</td>
+                <td>PDVSA</td>
+              </tr>
+            </table>
+            <button type="submit" class="btn btn-primary btn-sm">Mostrar detalles</button>
+          </div>
+
+          <div class="col-sm-3" style="margin-bottom:1rem;">
+            <img src="usuarios/usuario03.jpg" alt="" style="width: 100px; height: 100px" class="rounded-circle">
+            <table>
+              <tr>
+                <td>Nombre:</td>
+                <td>Jesús Dasilva</td>
+              </tr>
+              <tr>
+                <td>Grupo:</td>
+                <td>PDVSA</td>
+              </tr>
+            </table>
+            <button type="submit" class="btn btn-primary btn-sm">Mostrar detalles</button>
+          </div>
+
+          <div class="col-sm-3" style="margin-bottom:1rem;">
+            <img src="usuarios/usuario04.jpg" alt="" style="width: 100px; height: 100px" class="rounded-circle">
+            <table>
+              <tr>
+                <td>Nombre:</td>
+                <td>Jesús Dasilva</td>
+              </tr>
+              <tr>
+                <td>Grupo:</td>
+                <td>PDVSA</td>
+              </tr>
+            </table>
+            <button type="submit" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">Mostrar detalles</button>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="display: flex;justify-content: center;">
+      <div class="row justify-content-md-center">
+        <div class="col-12">
+          <nav aria-label="...">
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active">
+                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Datos del Contacto</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="usuarios/usuario04.jpg" alt="" style="width: 100px; height: 100px" class="img-thumbnail">
+            <div class="table-responsive-sm">
+              <table class="table table-borderless">
+                <tr>
+                  <td>Nombre:</td>
+                  <td>Jesús Dasilva</td>
+                </tr>
+                <tr>
+                  <td>Dirección:</td>
+                  <td>Calle La fe, Puerto la Cruz re wert wert wretw ertwert wertw ert wertwertw ert wert</td>
+                </tr>
+                <tr>
+                  <td>Teléfono:</td>
+                  <td>0414947867</td>
+                </tr>
+                <tr>
+                  <td>E-mail:</td>
+                  <td>jesusdasilva@gmail.com</td>
+                </tr>
+                <tr>
+                  <td>Grupo:</td>
+                  <td>PDVSA</td>
+                </tr>
+
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- JS -->
+    <script src="jquery-3.3.1.slim.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+</body>
+
+</html>

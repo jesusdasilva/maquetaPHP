@@ -1,0 +1,47 @@
+
+
+<style media="screen">
+  /**
+    Menú vertical
+    */
+  .propio-menu {
+    font-size: .875rem; /* Tamaño de letra */
+    height:100vh; /* Tamño */
+    min-width:190px; /* Ancho mínimo */
+  }
+  .propio-menu .nav-link {
+    color: #333; /* Color de la fuente */
+  }
+
+  .propio-menu .nav-link .feather {
+    color: #999; /* Color de los íconos*/
+  }
+  .propio-menu .nav-link:hover,
+  .propio-menu .nav-link:hover .feather {
+    color:#007bff; /* Color de hover de iconos y fuente */
+  }
+</style>
+
+<!-- Sidebar-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2 d-none d-md-block bg-light propio-menu">
+      <!-- Menú -->
+      <nav class="nav flex-column">
+        <a class="nav-link" href="#"><i data-feather="home" class="mr-2"></i>Inicio</a>
+        <a class="nav-link" href="#"><i data-feather="grid" class="mr-2"></i>Grupos</a>
+        <a class="nav-link" href="#"><i data-feather="book-open" class="mr-2"></i>Contactos</a>
+        <a class="nav-link" href="#"><i data-feather="trending-up" class="mr-2"></i>Reportes</a>
+        <a class="nav-link" href="#"><i data-feather="help-circle" class="mr-2"></i>Ayuda</a>
+        <a class="nav-link" href="#"><i data-feather="layers" class="mr-2"></i>Acerca de</a>
+      </nav><!-- /.Menú -->
+      <!-- Menú administrativo -->
+      <hr>
+      <nav class="nav flex-column">
+        <a class="nav-link disabled" href="#"><i data-feather="unlock" class="mr-2"></i>Administración</a>
+        <a class="nav-link" href="#"><i data-feather="users" class="mr-2"></i>Perfiles</a>
+        <a class="nav-link" href="#"><i data-feather="user" class="mr-2"></i>Usuarios</a>
+      </nav><!-- /.Menú administrativo -->
+    </div>
+  </div>
+</div><!-- /.Sidebar-->

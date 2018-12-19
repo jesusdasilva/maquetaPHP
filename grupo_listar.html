@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="favicon.ico">
+
+  <!--  CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/dashboard2.css">
+
+
+  <style media="screen">
+    /* Tamaño de la fuente general*/
+      body {
+        font-size: .875rem;
+
+      }
+
+    </style>
+
+  <title>Agenda de Contactos</title>
+</head>
+
+<body>
+
+
+  <!-- Barra de navegación  -->
+  <nav class="navbar sticky-top navbar-dark bg-primary navbar-expand-md flex-md-nowrap">
+
+    <!-- Nombre aplicación -->
+    <a class="navbar-brand" href="#">
+      <img src="address-book.svg" width="30" height="30" class="d-inline-block align-top mr-1" alt="">
+      <span>Agenda de Contactos</span>
+    </a><!-- /. Nombre Aplicación -->
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <!--span class="navbar-toggler-icon"></span-->
+      <i data-feather="align-justify"></i>
+    </button>
+    <!-- Salir -->
+    <div class="navbar-nav ml-auto dropdown d-none d-md-flex">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i data-feather="power" class="mr-2"></i>Jesús Dasilva
+      </a>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink" style="font-size: .875rem;">
+        <a class="dropdown-item" href="#"><i data-feather="user-check"></i>Información del usuario</a>
+        <a class="dropdown-item" href="#"><i data-feather="lock"></i>Cambiar clave</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#"><i data-feather="log-out"></i>Salir</a>
+      </div>
+    </div><!-- /. Salir -->
+
+  </nav><!-- /. Barra de navegación -->
+
+  <!-- Menú para móvil-->
+  <div class="bg-light">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <nav class="nav flex-column">
+        <a class="nav-link" href="resumen.html"><i data-feather="home"></i>Resumen</a></li>
+        <a class="nav-link" href="grupo_buscar.html"><i data-feather="grid" class="mr-2"></i>Grupos</a>
+        <a class="nav-link" href="contacto_buscar.html"><i data-feather="book-open" class="mr-2"></i>Contactos</a>
+        <a class="nav-link" href="#"><i data-feather="trending-up" class="mr-2"></i>Reportes</a>
+        <div class="dropdown-divider"></div>
+        <a class="nav-link" href="#"><i data-feather="user-check"></i>Información del usuario</a>
+        <a class="nav-link" href="#"><i data-feather="lock"></i>Cambiar clave</a>
+        <div class="dropdown-divider"></div>
+        <a class="nav-link" href="#"><i data-feather="help-circle" class="mr-2"></i>Ayuda</a>
+        <a class="nav-link" href="#"><i data-feather="layers"></i>Acerca de</a>
+        <div class="dropdown-divider"></div>
+        <a class="nav-link disabled" href="#"><i data-feather="log-out"></i>Salir</a>
+      </nav>
+    </div>
+  </div><!-- /.Menú usuario para móvil-->
+
+  <!-- container -->
+  <div class="container-fluid">
+
+    <!-- row -->
+    <div class="row">
+
+      <!-- Sidebar----------------------------------------------------------->
+      <nav class="col-md-3 col-lg-2 bg-light d-none d-md-block sidebar pt-5" style="min-width: 200px">
+        <div class="sidebar-sticky flex-column w-100 mt-2">
+          <ul class="nav flex-column pt-1">
+            <li class="nav-item">
+              <a class="nav-link" href="resumen.html"><i data-feather="globe"></i>Resumen</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="grupo_buscar.html"><i data-feather="grid" class="mr-2"></i>Grupos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i data-feather="book-open" class="mr-2"></i>Contactos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i data-feather="trending-up" class="mr-2"></i>Reportes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i data-feather="help-circle" class="mr-2"></i>Ayuda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i data-feather="layers"></i>Acerca de</a>
+            </li>
+          </ul>
+          <!-- Menú Administrativo -->
+          <hr>
+          <p class="sidebar-heading">Administración<span data-feather="shield" class="ml-2"></span></p>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i data-feather="users" class="mr-2"></i>Perfiles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i data-feather="user"></i>Usuario</a>
+            </li>
+          </ul><!-- /.Menú Administrativo -->
+        </div>
+      </nav>
+      <!-- /.Sidebar--------------------------------------------------------->
+
+      <!-- main -->
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+
+        <!-- Indicador-->
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+          <h1 class="h4">Grupos </h1>
+          <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic example">
+            <a href="grupo_buscar.html" class="btn btn-outline-primary btn-sm" role="button"><span data-feather="search"></span>Buscar</a>
+            <a href="grupo_agregar.html" class="btn btn-outline-primary btn-sm" role="button"><span data-feather="plus"></span>Agregar</a>
+          </div>
+        </div><!-- /.Indicador-->
+
+        <!-- row Contenido -->
+        <div class="row">
+
+          <!-- Contenedor de tabla -->
+          <div class="col-sm-12 col-md-12 d-flex justify-content-center">
+
+            <!-- tabla -->
+            <div class="card w-100 mb-3">
+              <div class="card-header">
+                <span data-feather="list"></span>Listado
+              </div>
+              <div class="card-body">
+                <table class="table table-hover table-bordered">
+                  <caption>Total: 25</caption>
+                  <thead>
+                    <tr>
+                      <th class="text-center" scope="col">#</th>
+                      <th class="text-center" scope="col">Nombre</th>
+                      <th class="text-center" scope="col">Acción</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th class="text-center" scope="row" style="width:10%;">1</th>
+                      <td>Trabajador</td>
+                      <td class="w-25">
+                        <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic example">
+                          <a href="grupo_mostrar.html" class="btn btn-outline-primary btn-sm" role="button"><span data-feather="check-square"></span>Mostrar</a>
+                          <a href="grupo_editar.html" class="btn btn-outline-primary btn-sm" role="button"><span data-feather="edit"></span>Editar</a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="text-center" scope="row" style="width:10%;">2</th>
+                      <td>Contratista</td>
+                      <td class="w-25">
+                        <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic example">
+                          <a href="#" class="btn btn-outline-primary btn-sm" role="button"><span data-feather="check-square"></span>Mostrar</a>
+                          <a href="#" class="btn btn-outline-primary btn-sm" role="button"><span data-feather="edit"></span>Editar</a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="text-center" scope="row" style="width:10%;">3</th>
+                      <td>Exmpleado</td>
+                      <td class="w-25">
+                        <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic example">
+                          <a href="#" class="btn btn-outline-primary btn-sm" role="button"><span data-feather="check-square"></span>Mostrar</a>
+                          <a href="#" class="btn btn-outline-primary btn-sm" role="button"><span data-feather="edit"></span>Editar</a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="text-center" scope="row" style="width:10%;">4</th>
+                      <td>Proveedor</td>
+                      <td class="w-25">
+                        <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic example">
+                          <a href="#" class="btn btn-outline-primary btn-sm" role="button"><span data-feather="check-square"></span>Mostrar</a>
+                          <a href="#" class="btn btn-outline-primary btn-sm" role="button"><span data-feather="edit"></span>Editar</a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="text-center" scope="row" style="width:10%;">5</th>
+                      <td>Cliente</td>
+                      <td class="w-25">
+                        <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic example">
+                          <a href="#" class="btn btn-outline-primary btn-sm" role="button"><span data-feather="check-square"></span>Mostrar</a>
+                          <a href="#" class="btn btn-outline-primary btn-sm" role="button"><span data-feather="edit"></span>Editar</a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <!-- Paginador-->
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination justify-content-end">
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" tabindex="-1">Anterior</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Siguiente</a>
+                    </li>
+                  </ul>
+                </nav><!-- paginador-->
+
+              </div>
+
+
+
+            </div>
+            <!-- /.tabla -- >
+
+</div><!-- /. Contenedor de tabla-->
+
+
+          </div><!-- /.row Contenido-->
+
+      </main><!-- /.main -->
+
+    </div><!-- /.row-->
+
+  </div><!-- /.container-->
+
+  <!-- JS -->
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/feather.min.js"></script>
+  <script>
+    //feather.replace({width: 16,height: 16,color: '#999', class:'mr-2'});
+    feather.replace({
+      width: 16,
+      height: 16,
+      class: 'mr-2'
+    });
+  </script>
+</body>
+
+</html>
