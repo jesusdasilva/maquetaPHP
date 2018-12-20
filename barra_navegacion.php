@@ -3,7 +3,7 @@
 
   <!-- Nombre aplicación -->
   <a class="navbar-brand" href="#">
-    <img src="address-book.svg" width="30" height="30" class="d-inline-block align-top mr-1" alt="">
+    <img src="<?php echo RUTA_IMG ?>address-book.svg" width="30" height="30" class="d-inline-block align-top mr-1" alt="">
     <span>Agenda de Contactos</span>
   </a><!-- /. Nombre Aplicación -->
 
@@ -11,7 +11,7 @@
     <!--span class="navbar-toggler-icon"></span-->
     <i data-feather="align-justify"></i>
   </button>
-  
+
   <!-- Salir -->
   <div class="navbar-nav ml-auto dropdown d-none d-md-flex">
     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
