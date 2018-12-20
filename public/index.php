@@ -3,13 +3,16 @@
   * Controlador Frontal
   */
 
+
 // Configuraciones
 include 'config.php';
 
   // Enrrutador
   switch (URL) {
     case '/resumen':
-      include('resumen.php');
+      include('resumen_controller.php');
+      $controller = new ResumenController();
+
       break;
     case '/grupo/buscar':
       include 'grupo_buscar.php';
@@ -20,3 +23,11 @@ include 'config.php';
       echo '<br> PÁGINA NO ENCONTRADA';
       break;
   }
+/*
+
+
+$app = new app($controller);
+$app->run();
+
+
+*/
